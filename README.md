@@ -1,12 +1,19 @@
 # 🚗 Car Price Predictor
 
-![App Screenshot](static/screenshot.png)
+
 
 ## 📌 Project Overview
 This is a **Machine Learning-based Web Application** that predicts the selling price of a used car based on various input features.
 
 The system uses a trained regression model and a Flask-based web interface to provide real-time predictions.
 
+
+## 🏗️ Project Structure
+
+
+<p align="center">
+  <img src="static/Structure.png" alt="Project Structure" width="500" height="400">
+</p>
 ---
 
 ## ⚙️ Features
@@ -22,6 +29,8 @@ The system uses a trained regression model and a Flask-based web interface to pr
   - Transmission
   - Owner
 
+
+![App Screenshot](static/UI.png)
 ---
 
 ## 🧠 Machine Learning Model
@@ -34,5 +43,3 @@ The system uses a trained regression model and a Flask-based web interface to pr
   - R² Score
 
 ---
-
-## 🏗️ Project Structure
