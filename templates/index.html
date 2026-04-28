@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Price Predictor</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🚗 Car Price Predictor</h1>
+
+        <form id="predictForm">
+
+            <div class="grid">
+
+                <input type="number" id="yearInput" name="Year" placeholder="Year" required>
+                <p id="carAgeText" style="margin:5px 0; color:#94a3b8;"></p>
+                <input type="number" step="0.1" name="Present_Price" placeholder="Present Price" required>
+                <input type="number" name="Kms_Driven" placeholder="Kms Driven" required>
+
+                <select name="Fuel_Type_Petrol">
+                    <option value="1">Petrol</option>
+                    <option value="0">Diesel</option>
+                </select>
+
+                <select name="Seller_Type_Dealer">
+                    <option value="1">Dealer</option>
+                    <option value="0">Individual</option>
+                </select>
+
+                <select name="Transmission_Manual">
+                    <option value="1">Manual</option>
+                    <option value="0">Automatic</option>
+                </select>
+
+                <select name="Owner">
+                    <option value="0">0 Owner</option>
+                    <option value="1">1 Owner</option>
+                    <option value="2">2 Owner</option>
+                    <option value="3">3 Owner</option>
+                    <option value="4">4+ Owner</option>
+                </select>
+
+            </div>
+
+            <button type="submit">Predict Price</button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
